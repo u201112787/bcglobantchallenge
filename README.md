@@ -22,14 +22,17 @@ The project aims to create a REST API that can load information from CSV files i
 
 
 ## Usage
-```bash
-1. Clone the repository and configure your credentials on the config.py file, in a docker terminal run the following command:
 
+1. Clone the repository and configure your credentials on the config.py file, in a docker terminal run the following command:
+```bash
 docker build -t test_bc_glob .
+```
 
 2. Then run the container with:
 
+```bash
 docker run -d -p 5000:5000 test_bc_glob
+```
 
 3. Once the project is running, you can test its functionality using Postman:
    - Install Postman: [Download Postman](https://www.postman.com/downloads/)
@@ -42,6 +45,10 @@ Within the request, the process requires a JSON payload with the following infor
    "key_file": "data/Jobs.csv",  // objet key
    "bucket_name": "bcglobantchallengue" // bucket name
 }
+```
+
+
+
 
 ## Execution example
 
