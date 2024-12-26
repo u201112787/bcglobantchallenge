@@ -1,0 +1,5 @@
+flask
+SQLAlchemy
+boto3
+pandas
+psycopg2
