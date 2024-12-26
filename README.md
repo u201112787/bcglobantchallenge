@@ -48,7 +48,7 @@ Within the request, the process requires a JSON payload with the following infor
 {
    "table": "jobs", // table in the db
    "key_file": "data/Jobs.csv",  // objet key
-   "bucket_name": "bcglobantchallengue" // bucket name
+   "bucket_name": "bcglobantchallenge" // bucket name
 }
 ```
 
@@ -74,7 +74,7 @@ Within the request, the process requires a JSON payload with the following infor
 
 ![Postgre](./images/postgre1.jpg)
 
-- Doing querys to explore the data -- exercises from the challengue, you can see the query on the QuerySection2.sql file
+- Doing querys to explore the data -- exercises from the challenge, you can see the query on the QuerySection2.sql file
 
 ![exercise1](./images/ex1.jpg)
 
