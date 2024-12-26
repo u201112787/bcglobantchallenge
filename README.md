@@ -18,7 +18,7 @@ The project aims to create a REST API that can load information from CSV files i
 - **`config.py`**: Configuration file where the credentials for connecting to the PostgreSQL database and the AWS S3 access keys are set.
 - **`requirements.txt`**: File that contains the dependencies needed for the project
 - **`Dockerfile`**: Contains the instructions to build a Docker image to run the Flask application in a container.
-- **`docker-compose.yml`** (opcional): A file that configures multiple containers and simplifies running the project using Docker Compose.
+- **`docker-compose.yml`** (optional): A file that configures multiple containers and simplifies running the project using Docker Compose.
 
 
 ## Usage
@@ -38,6 +38,11 @@ docker run -d -p 5000:5000 test_bc_glob
    - Install Postman: [Download Postman](https://www.postman.com/downloads/)
    - Launch a POST request to `http://localhost:5000/upload-data`
 
+Request example:
+```bash
+http://127.0.0.1:5000/upload-csv
+```
+
 Within the request, the process requires a JSON payload with the following information:
 ```json
 {
@@ -46,9 +51,6 @@ Within the request, the process requires a JSON payload with the following infor
    "bucket_name": "bcglobantchallengue" // bucket name
 }
 ```
-
-
-
 
 ## Execution example
 
