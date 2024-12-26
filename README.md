@@ -36,12 +36,12 @@ docker run -d -p 5000:5000 test_bc_glob
    - Launch a POST request to `http://localhost:5000/upload-data`
 
 Within the request, the process requires a JSON payload with the following information:
-   
-      {
-         "table": "jobs", // table in the db
-         "key_file": "data/Jobs.csv",  // objet key
-         "bucket_name": "bcglobantchallengue" // bucket name
-      }
+```json
+{
+   "table": "jobs", // table in the db
+   "key_file": "data/Jobs.csv",  // objet key
+   "bucket_name": "bcglobantchallengue" // bucket name
+}
 
 ## Execution example
 
